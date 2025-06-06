@@ -1,10 +1,39 @@
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--theme-dark);
+    color: var(--font-white);
     font-size: 18px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    height: 35px;
+    overflow: hidden;
+}
+footer {
+    padding-top: 5px;
+    height: 50px;
+    background-color: var(--theme-dark);
+    color: var(--font-white);
+    font-size: 10px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer button {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    cursor: pointer;
+    color: var(--font-white);
+    align-items: center;
+    justify-content: center;
+}
+
+.td-body {
+    height: calc(100vh - 85px);
+    width: 100%;
+    background-color: var(--theme-white);
+    overflow-y: scroll;
 }
